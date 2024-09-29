@@ -27,11 +27,16 @@ jobs:
       run: |
         cd build
         cmake -DCMAKE_BUILD_TYPE=Debug ..
+        make
+        make install
+        rm -r build
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
         name: build
-        path: build/*
+        path: |
+          bin/*
+          lib/*
         retention-days: 0
     
