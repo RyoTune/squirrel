@@ -29,7 +29,6 @@ jobs:
         cmake -DCMAKE_BUILD_TYPE=Debug ..
         make
         make install
-        rm -r build
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
