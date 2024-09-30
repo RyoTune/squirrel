@@ -21,8 +21,7 @@ jobs:
     # Configure with CMake and build
     - name: Configure and Build
       run: |
-        cd build
-        cmake -DCMAKE_BUILD_TYPE=Debug ..
+        cmake -DCMAKE_BUILD_TYPE=Debug
         make sq64
         make install
 
