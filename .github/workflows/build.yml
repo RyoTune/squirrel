@@ -21,7 +21,7 @@ jobs:
     # Configure with CMake and build
     - name: Configure and Build
       run: |
-        make sq64
+        cmake --build
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
