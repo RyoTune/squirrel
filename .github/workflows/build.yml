@@ -31,5 +31,6 @@ jobs:
         path: |
           bin/*
           lib/*
+          build/*
         retention-days: 0
     
