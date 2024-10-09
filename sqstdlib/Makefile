@@ -39,6 +39,6 @@ sqprof:
 	rm *.o
 
 sq64:
-	$(CC) -O2 -m64 -fno-exceptions -D_SQ64 -fno-rtti -Wall -fno-strict-aliasing -c $(SRCS) $(INCZ) $(DEFS)
+	$(CC) -O2 -m64 -fno-exceptions -D_SQ64 -fno-rtti -Wall -fno-strict-aliasing -static -c $(SRCS) $(INCZ) $(DEFS)
 	ar rc $(OUT) *.o
 	rm *.o
