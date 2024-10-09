@@ -22,7 +22,7 @@ jobs:
     - name: Configure and Build
       run: |
         cd build
-        cmake ..
+        cmake .. -DCMAKE_BUILD_TYPE=Release
         cmake --build .
 
     - name: Upload Build Artifact
