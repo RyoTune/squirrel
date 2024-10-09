@@ -21,7 +21,6 @@ jobs:
     # Configure with CMake and build
     - name: Configure and Build
       run: |
-        cmake -DCMAKE_BUILD_TYPE=Debug
         make sq64
 
     - name: Upload Build Artifact
